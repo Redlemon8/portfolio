@@ -81,18 +81,6 @@ body {
     z-index: 1000;
 }
 
-
-.mousemove {
-    height: 35px;
-    width: 35px;
-    border: 2px solid #f4d644;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    border-radius: 50px;
-    cursor: crosshair;
-
-}
-
 /* SECTION ABOUT */
 
 .about-container {
