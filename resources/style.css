@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: 'Lobster Two', cursive;
     font-size: 16px;
+    text-decoration: none;
 }
 
 body {
@@ -60,9 +61,7 @@ body {
 
 /* INFO CONTAINER */
 
-.info-container {
-    border: 1px solid #414042;
-}
+
 .info-container, .about-container {
     width: 100%;
 }
@@ -158,6 +157,7 @@ body {
     font-size: 1.5rem;
     color: white;
 }
+
 
 /*//////////////////////////*/
 
