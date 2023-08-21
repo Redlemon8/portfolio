@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lobster Two', cursive;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* BANNER DECORATION SECTION */
+
+.banner {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    background-color: #f4d644;
+}
+
+.diagonal-band {
+    position: absolute;
+    width: 20%;
+    height: 26%;
+    background-color: #414042;
+    background: linear-gradient(to bottom right, transparent 0, transparent 25%, #414042 10%, #414042 50%, transparent 0);
+    
+}
+
+.diagonal-black-band {
+    position: absolute;
+    width: 20%;
+    height: 26%;
+    right: 0;
+    background-color: #414042;
+    background: linear-gradient(to bottom left, transparent 0, transparent 25%, #414042 10%, #414042 50%, transparent 0);
+}
+
+.yellow-band {
+    width: 10%;
+    height: 15%;
+    top: 5rem;
+    left: 5rem;
+    position: absolute;
+    background-color: #f4d644;
+    clip-path: polygon(0 0, 100% 50px, 100% 0, 0 90px);
+}
+
+.yellow-polygon {
+    width: 10%;
+    height: 15%;
+    top: 5rem;
+    right: 5rem;
+    position: absolute;
+    background-color: #f4d644;
+    clip-path: polygon(100% 0, 0 50px, 0 0, 100% 90px);
+}
+
+/*////////////////////////////////////////*/
+
+/* INFO CONTAINER */
+
+.info-container {
+    border: 1px solid #414042;
+}
+.info-container, .about-container {
+    width: 100%;
+}
+
+.info-container h1 {
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.show-title {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.mousemove {
+    height: 35px;
+    width: 35px;
+    border: 2px solid #f4d644;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    cursor:crosshair;
+
+}
+
+/* SECTION ABOUT */
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    width: 95%;
+}
+
+.info {
+    margin: 1.5rem 0 0 3rem;
+    padding-left: 4rem;
+    width: 40%;
+}
+
+.picture img {
+    width: 40%;
+    border: 10px solid #f4d644;
+    box-shadow: 2px 2px 15px 2px #414042;
+}
+
+.about {
+    width: 50%;
+}
+
+.about h2 {
+    font-size: 2rem;
+}
+
+.text {
+    width: 60%;
+    justify-content: center;
+}
+
+.text p {
+    font-size: 1.5rem;
+}
+
+/*/////////////////////////////////*/
+
+/* PROJECT CONTAINER */
+
+.project-container {
+    background-color: #414042;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 4rem 0 0 2rem;
+}
+
+.project-container figure {
+    width: 25%;
+}
+
+.project-container img {
+    width: 100%;
+    border: 10px solid #f4d644;
+    box-shadow: 5px 5px 15px black;
+}
+
+.project-container figcaption {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/*//////////////////////////*/
+
+/* FOOTER */
+footer {
+    border: 3px solid #f4d644;
+    padding: 1rem;
+}
+
+.linked-in {
+    width: 8%;
+    height: 8%;
+}
+
+.github {
+    width: 5%;
+    height: 4.5%;
+}
+/*//////////////////////////*/
+
+/* IPAD SIZE */
+
+@media screen and (max-width: 830px) {
+    
+    .info {
+        padding-left: 2rem;
+        width: 50%;
+    }
+
+    .picture img {
+        width: 60%;
+    }
+
+    .project-container figure {
+        width: 100%;
+    }
+}
+
+/*//////////////////////////*/
+
+/* PHONE SIZE */
+
+@media screen and (max-width: 770px) {
+
+    /* ABOUT */
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .picture {
+        width: 40%;
+    }
+    .picture img{
+        width: 75%;
+    }
+
+    .about h2{
+        width: 75%;
+        margin: 0;
+    }
+
+    .text {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .text p {
+        padding: 2rem 0 0 4rem;;
+    }
+
+    /* PROJECT SECTION */
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-container figure {
+        width: 90%;
+        margin: 0 1.5rem 2rem 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .picture {
+        display: none;
+    }
+}
+
