@@ -145,8 +145,16 @@ body {
 
 .project-container img {
     width: 100%;
-    border: 8px solid #f4d644;
-    box-shadow: 5px 5px 15px black;
+    border: 5px solid #f4d644;
+    box-shadow: 8px 8px 15px black;
+}
+
+.project-container img:hover{
+    filter: contrast(120%);
+}
+
+.project-container img:active {
+    box-shadow: -5px -5px 15px black;
 }
 
 .project-container figcaption {
